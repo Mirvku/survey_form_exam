@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Itz Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform </p>
+    <form action="" id="survey-form">
+        <label for="name" id="name-label">
+            Name 
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        </label>
+        
+        <label for="email" id="email-label">
+            Email 
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        </label>
+        
+        <label for="number" id="number-label">
+            Age (optional) 
+            <input type="number" name="age" id="number" min="13" max="100" placeholder="Enter your age">
+        </label>
+        
+        <label for="dropdown" id="dropdown-label">Which of the following is your favorite album?
+            <select name="album" id="dropdown">
+                <option value="" disabled>Select an album</option>
+                <option value="1">It'z Itzy</option>
+                <option value="2">It'z Icy</option>
+                <option value="3">It'z Me</option>
+                <option value="4">Not Shy</option>
+                <option value="5">Guess Who</option>
+                <option value="6">Checkmate</option>
+            </select>
+        </label>
+        
+        <label for="">Would you like to be midzy?</label>
+        <label for="midzy-yess"><input type="radio" name="midzy-yes" class="inline" id="midzy-yess" value="yes" checked> Yes!!</label>
+        <label for="midzy-ofcourse"><input type="radio" name="midzy-yes" class="inline bottom" value="ofcourse" id="midzy-ofcourse"> Of Course!!</label>
+
+        <label for="your-bias">Who is your bias?</label>
+        <label for="yeji"><input type="checkbox" class="inline" name="yeji" id="yeji" value="yeji">Hwang Yeji</label>
+        <label for="lia"><input type="checkbox" class="inline" name="lia" id="lia" value="lia">Choi Lia</label>
+        <label for="ryujin"><input type="checkbox" class="inline" name="ryujin" id="ryujin" value="ryujin">Shin Ryujin</label>
+        <label for="chaeryeong"><input type="checkbox" class="inline" name="chaeryeong" id="chaeryeong" value="chaeryeong">Lee Chaeryeong</label>
+        <label for="yuna"><input type="checkbox" class="inline" name="yuna" id="yuna" value="yuna">Shin Yuna</label>
+        <label for="message">
+            Message for Itzy
+            <textarea name="message" id="message" cols="1" rows="8" placeholder="Message For Itzy" required></textarea>
+        </label>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+</body>
+</html>
